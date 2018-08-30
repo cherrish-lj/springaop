@@ -15,7 +15,9 @@ public class IndexController {
 	@RequestMapping("/index")
 	public String home(String name) {
 		sayHelloService.saytime();
-		return sayHelloService.sayHello(name);
+		String result = sayHelloService.sayHello(name);
+		System.out.println(sayHelloService);
+		return result;
 	}
 	
 }
